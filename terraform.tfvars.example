@@ -1,0 +1,7 @@
+# set variable values
+
+aws_access_key = "YOUR_AWS_ACCESS_KEY"
+aws_secret_key = "YOUR_AWS_SECRET_KEY"
+aws_region = "YOUR_AWS_REGION"
+key_pair = "YOUR_KEY_PAIR"
+kms_key_id = "YOUR_KMS_KEY_ID"
