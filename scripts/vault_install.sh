@@ -116,4 +116,7 @@ curl -sLo kubectl https://storage.googleapis.com/kubernetes-release/release/`cur
 chmod +x kubectl
 mv kubectl /usr/local/bin/
 
+echo "export KUBECONFIG=/etc/kubernetes/admin.conf" >> /home/ubuntu/.profile
+echo "export KUBECONFIG=/etc/kubernetes/admin.conf" >> /root/.profile
+
 echo "Minikube installation complete."
