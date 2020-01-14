@@ -23,7 +23,7 @@ aws_secret_access_key=${AWS_SECRET_KEY}
 EOF
 
 echo "Installing Vault..."
-curl -sLo vault.zip https://releases.hashicorp.com/vault/1.2.3/vault_1.2.3_linux_amd64.zip
+curl -sLo vault.zip ${VAULT_URL}
 sudo unzip vault.zip -d /usr/local/bin/
 
 # Server configuration

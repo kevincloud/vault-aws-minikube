@@ -8,6 +8,7 @@ data "template_file" "vault_setup" {
         AWS_SECRET_KEY = "${var.aws_secret_key}"
         AWS_REGION = "${var.aws_region}"
         AWS_KMS_KEY_ID = "${var.kms_key_id}"
+        VAULT_URL = "${var.vault_dl_url}"
     }
 }
 
