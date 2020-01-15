@@ -14,7 +14,7 @@ data "template_file" "vault_setup" {
 
 resource "aws_instance" "vault-server" {
     ami = "${data.aws_ami.ubuntu.id}"
-    instance_type = "t3.small"
+    instance_type = "t3.large"
     key_name = "${var.key_pair}"
     vpc_security_group_ids = ["${aws_security_group.vault-server-sg.id}"]
     user_data = "${data.template_file.vault_setup.rendered}"
